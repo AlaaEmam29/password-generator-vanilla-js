@@ -1,0 +1,83 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #92967c;
+    
+}
+.container {
+    width: 450px;
+    padding:1rem;
+    background-color: #e3e1d8;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+    transition:width 0.3s ease-in-out;
+}
+.password-output
+{
+    background-color: #e5d3e2;
+    position: relative;
+    padding: 1rem;
+}
+.password
+{
+    align-items: center;
+
+    font: size 1.4rem;
+}
+.btn-copy
+{
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+.password-output:hover .btn-copy {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+.password-generator-container
+{
+    margin-top: 1rem;
+}
+.form-control
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+label
+{
+    font-size: 1.2rem;
+
+}
+.generate-btn
+{
+    background-color:#ebc995;
+    width:100%;
+    border:none;
+    padding: 0.5rem;
+    letter-spacing: 0.35rem;
+    cursor: pointer;
+}
+@media screen and (max-width :575.98px)
+{
+    .container {
+width: 400px;
+    }
+
+}
